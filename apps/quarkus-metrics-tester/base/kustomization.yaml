@@ -1,0 +1,6 @@
+resources:
+  - deployment.yml
+images:
+- name: metrics-image
+  newName: quay.io/alerossirh/quarkus-metrics-tester
+  newTag: latest
