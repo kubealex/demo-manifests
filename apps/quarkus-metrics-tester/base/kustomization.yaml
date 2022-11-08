@@ -1,5 +1,7 @@
 resources:
   - deployment.yml
+  - service.yml
+  - route.yml
 images:
 - name: metrics-image
   newName: quay.io/alerossirh/quarkus-metrics-tester

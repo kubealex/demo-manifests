@@ -1,0 +1,16 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: metrics-quarkus
+  labels:
+    app: metrics-quarkus
+    app.kubernetes.io/component: metrics-quarkus
+    app.kubernetes.io/instance: metrics-quarkus
+spec:
+  to:
+    kind: Service
+    name: metrics-quarkus
+    weight: 100
+  port:
+    targetPort: 8080-tcp
+  wildcardPolicy: None
